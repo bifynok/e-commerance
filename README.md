@@ -17,6 +17,7 @@ npm test
 ## Health Check
 <img width="1425" height="160" alt="image_2026-04-02_22-24-46" src="https://github.com/user-attachments/assets/dd45430f-5b9f-466c-ad14-91861d51b1b1" />
 <img width="1427" height="164" alt="image_2026-04-02_22-24-14" src="https://github.com/user-attachments/assets/ac57aca5-7316-4cbb-a3cc-e1d59147c083" />
+
 ## Logs
 ```json
 {"timestamp":"2026-04-02T19:20:54.121Z","level":"INFO","message":"Already applied, skipping: 001_create_leaderboard.sql"}
