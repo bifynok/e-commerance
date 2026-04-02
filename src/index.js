@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({ quiet: true});
 const express = require('express');
 const { runMigrations } = require('./db/migrate');
 const routes = require('./routes/leaderboard');

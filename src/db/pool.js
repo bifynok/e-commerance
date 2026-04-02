@@ -8,4 +8,13 @@ const pool = new Pool({
   password: process.env.DB_PASSWORD,
 });
 
+pool.on('error', (err) => {
+  process.stdout.write(JSON.stringify({
+    timestamp: new Date().toISOString(),
+    level: 'ERROR',
+    message: 'DB pool error',
+    error: err.message,
+  }) + '\n');
+});
+
 module.exports = pool;
