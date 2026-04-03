@@ -1,0 +1,20 @@
+replicaCount: 2
+
+image:
+  repository: ghcr.io/bifynok/ecommerce-app
+  tag: latest
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+db:
+  host: postgres
+  port: "5432"
+  name: leaderboard_db
+  user: postgres
+  password: postgres
